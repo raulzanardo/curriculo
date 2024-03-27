@@ -8,4 +8,6 @@ Requisitos:
  - Dark/Bright
 
 Estrutura:
- - 
+ - Home
+ - Curriculo
+ - Portfólio
