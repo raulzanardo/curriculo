@@ -39,11 +39,12 @@ class _PageCurriculumState extends State<PageCurriculum> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: SingleChildScrollView(
+
         padding: const EdgeInsets.all(20),
         child: Wrap(
           ///Foto e text (1 e 2)
           //alignment: WrapAlignment.center,
-
+          crossAxisAlignment: WrapCrossAlignment.start,
           children: [
             const WidgetPhoto(),
             Container(
