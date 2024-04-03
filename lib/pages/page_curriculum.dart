@@ -45,6 +45,7 @@ class _PageCurriculumState extends State<PageCurriculum> {
       body: Align(
         alignment: Alignment.topCenter,
         child: SingleChildScrollView(
+
           padding: const EdgeInsets.all(20),
           child: SizedBox(
             width: 700,
@@ -62,7 +63,7 @@ class _PageCurriculumState extends State<PageCurriculum> {
                       child: WidgetPhoto(),
                     ),
                     Container(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: (MediaQuery.of(context).size.width > 800) ? const EdgeInsets.fromLTRB(20.0, 0, 0, 20.0) : const EdgeInsets.all(0.0),
                       // width:  500 ,
                       width: (MediaQuery.of(context).size.width > 800) ? 500 : double.infinity,
 
