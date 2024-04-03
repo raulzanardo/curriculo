@@ -7,7 +7,7 @@ class WidgetPhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     //      alignment: MediaQuery.of(context).size.width > 700 ? Alignment.topLeft : Alignment.center,
     return Column(
-      crossAxisAlignment: MediaQuery.of(context).size.width > 700 ? CrossAxisAlignment.start : CrossAxisAlignment.center,
+      crossAxisAlignment: MediaQuery.of(context).size.width > 800 ? CrossAxisAlignment.start : CrossAxisAlignment.center,
       children: [
         Container(
           //TODO ajustar tamanho dinamico da imagem
