@@ -4,11 +4,11 @@ Requisitos:
  - Seguir modelo do CV
  - Responsivo 
  - Multi-linguagem
- - Inserir portifolio 
+ - Inserir portfólio
  - Dark/Bright
 
 Estrutura:
  - Home
- - Curriculo
+ - Currículo
  - Portfólio
 
