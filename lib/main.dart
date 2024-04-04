@@ -12,6 +12,9 @@ http://www.coderzheaven.com/2019/04/26/tabbedappbar-in-flutter-android-and-ios/
 
  */
 
+
+
+
 void main() {
   runApp(
     const MyApp(),
@@ -24,42 +27,29 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-
-
-
-    return AdaptiveTheme(
-      light: ThemeData(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Raul Zanardo',
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('pt', "BR"),
+        Locale('en', "US"),
+      ],
+      theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      dark: ThemeData.dark(
+      darkTheme: ThemeData.dark(
         useMaterial3: true,
       ),
-      initial: AdaptiveThemeMode.light,
-      builder: (theme, darkTheme) => MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Raul Zanardo',
-        localizationsDelegates: const [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: const [
-          Locale('pt', "BR"),
-          Locale('en', "US"),
-        ],
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        darkTheme: ThemeData.dark(
-          useMaterial3: true,
-        ),
-        themeMode: ThemeMode.dark,
-        home: I18n(
-          child: const PageCurriculum(),
-        ),
+      themeMode: ThemeMode.system,
+      home: I18n(
+        initialLocale: const Locale('pt', 'BR'),
+        child: const PageHome(),
       ),
     );
   }
