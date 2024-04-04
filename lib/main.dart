@@ -15,6 +15,7 @@ https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-pro
  */
 
 //TODO Criar localization do CV
+//FIXME corrigir overflow de pixel no menu em celulares pequenos
 
 ThemeData lightTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
