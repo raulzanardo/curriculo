@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:adaptive_theme/adaptive_theme.dart';
 
 import '../widgets/widget_photo.dart';
 import '../widgets/widget_text_box.dart';

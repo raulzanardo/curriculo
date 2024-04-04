@@ -1,10 +1,10 @@
 import 'package:curriculo/pages/page_about.dart';
 import 'package:curriculo/pages/page_curriculum.dart';
 import 'package:curriculo/pages/page_portfolio.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:i18n_extension/i18n_extension.dart';
 
-
+import '../main.dart';
 
 const List<String> menuList = [
   "Currículo",
@@ -20,7 +20,6 @@ class PageHome extends StatefulWidget {
 }
 
 class _PageHomeState extends State<PageHome> {
-
 
   @override
   Widget build(BuildContext context) {
@@ -44,12 +43,16 @@ class _PageHomeState extends State<PageHome> {
               ),
               Row(
                 children: [
-                  //TODO Adicionar i18n
-                  //TODO Trocar icone do idioma
                   IconButton(
                     onPressed: () {
-                      print(MediaQuery.of(context).size.width);
+                      if (I18n.of(context).locale.toString() == 'pt_BR') {
+                        I18n.of(context).locale = const Locale("en", "US");
+                      } else {
+                        I18n.of(context).locale = const Locale("pt", "BR");
+                      }
+                      setState(() {});
                     },
+                    //TODO melhorar o icone de idioma
                     icon: const Icon(Icons.language),
                   ),
                   //TODO criar rotina de alteraçao de tema (Light, Dark, dinamic)

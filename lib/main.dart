@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:i18n_extension/i18n_extension.dart';
 
 import 'package:curriculo/pages/page_curriculum.dart';
 import 'package:curriculo/pages/page_home.dart';
-import 'package:i18n_extension/i18n_extension.dart';
+
+import 'package:curriculo/providers/provider_theme.dart';
+
 /*
 https://www.youtube.com/watch?app=desktop&v=7ut5YxIfEzI
 http://www.coderzheaven.com/2019/04/26/tabbedappbar-in-flutter-android-and-ios/
-
+https://itnext.io/an-easy-way-to-switch-between-dark-and-light-theme-in-flutter-fb971155eefe
  */
 
-
-
+//TODO Criar localization do CV
 
 void main() {
   runApp(
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(
         useMaterial3: true,
       ),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       home: I18n(
         initialLocale: const Locale('pt', 'BR'),
         child: const PageHome(),
