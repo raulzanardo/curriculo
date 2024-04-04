@@ -15,14 +15,9 @@ class PageCurriculum extends StatefulWidget {
 }
 
 class _PageCurriculumState extends State<PageCurriculum> {
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Align(
         alignment: Alignment.topCenter,
         child: SingleChildScrollView(

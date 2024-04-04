@@ -1,8 +1,8 @@
+import 'package:curriculo/providers/provider_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_extension.dart';
-
-import 'package:curriculo/pages/page_curriculum.dart';
+import 'package:provider/provider.dart';
 import 'package:curriculo/pages/page_home.dart';
 
 import 'package:curriculo/providers/provider_theme.dart';
@@ -11,14 +11,29 @@ import 'package:curriculo/providers/provider_theme.dart';
 https://www.youtube.com/watch?app=desktop&v=7ut5YxIfEzI
 http://www.coderzheaven.com/2019/04/26/tabbedappbar-in-flutter-android-and-ios/
 https://itnext.io/an-easy-way-to-switch-between-dark-and-light-theme-in-flutter-fb971155eefe
+https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-provider-e6ad1f023899
  */
 
 //TODO Criar localization do CV
 
+ThemeData lightTheme = ThemeData(
+  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+  useMaterial3: true,
+);
+
+ThemeData darkTheme = ThemeData.dark(
+  useMaterial3: true,
+);
+
 void main() {
   runApp(
-    const MyApp(),
+    ChangeNotifierProvider<ThemeNotifier>(
+      create: (_) => ThemeNotifier(darkTheme),
+      child: const MyApp(),
+    ),
   );
+
+  //runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,6 +42,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    final themeNotifier = Provider.of<ThemeNotifier>(context);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Raul Zanardo',
@@ -39,16 +56,11 @@ class MyApp extends StatelessWidget {
         Locale('pt', "BR"),
         Locale('en', "US"),
       ],
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      darkTheme: ThemeData.dark(
-        useMaterial3: true,
-      ),
-      themeMode: ThemeMode.dark,
+      theme: themeNotifier.getTheme(),
+
       home: I18n(
         initialLocale: const Locale('pt', 'BR'),
+        // initialLocale: const Locale('en', 'US'),
         child: const PageHome(),
       ),
     );

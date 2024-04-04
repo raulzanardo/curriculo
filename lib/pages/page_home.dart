@@ -1,16 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:i18n_extension/i18n_extension.dart';
+import 'package:provider/provider.dart';
+
+import '../main.dart';
+import 'package:curriculo/localization/localization_home.i18n.dart';
+import 'package:curriculo/providers/provider_theme.dart';
 import 'package:curriculo/pages/page_about.dart';
 import 'package:curriculo/pages/page_curriculum.dart';
 import 'package:curriculo/pages/page_portfolio.dart';
-import 'package:flutter/material.dart';
-import 'package:i18n_extension/i18n_extension.dart';
-
-import '../main.dart';
-
-const List<String> menuList = [
-  "Currículo",
-  "Portfólio",
-  "Sobre",
-];
 
 class PageHome extends StatefulWidget {
   const PageHome({super.key});
@@ -20,9 +17,10 @@ class PageHome extends StatefulWidget {
 }
 
 class _PageHomeState extends State<PageHome> {
-
   @override
   Widget build(BuildContext context) {
+    final themeNotifier = Provider.of<ThemeNotifier>(context);
+
     return DefaultTabController(
       length: 3,
       child: Scaffold(
@@ -34,7 +32,11 @@ class _PageHomeState extends State<PageHome> {
                 dividerHeight: 0,
                 tabAlignment: TabAlignment.start,
                 isScrollable: true,
-                tabs: menuList.map<Tab>((String menuItem) {
+                tabs: [
+                  "Currículo".i18n,
+                  "Portfólio".i18n,
+                  "Sobre".i18n,
+                ].map<Tab>((String menuItem) {
                   return Tab(
                     text: menuItem,
                   );
@@ -44,8 +46,9 @@ class _PageHomeState extends State<PageHome> {
               Row(
                 children: [
                   IconButton(
+                    tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
                     onPressed: () {
-                      if (I18n.of(context).locale.toString() == 'pt_BR') {
+                      if (I18n.of(context).locale == const Locale("pt", "BR")) {
                         I18n.of(context).locale = const Locale("en", "US");
                       } else {
                         I18n.of(context).locale = const Locale("pt", "BR");
@@ -55,12 +58,13 @@ class _PageHomeState extends State<PageHome> {
                     //TODO melhorar o icone de idioma
                     icon: const Icon(Icons.language),
                   ),
-                  //TODO criar rotina de alteraçao de tema (Light, Dark, dinamic)
                   IconButton(
-                    onPressed: () {
+                    tooltip:  themeNotifier.getText(),
 
+                    onPressed: () {
+                      themeNotifier.toggleTheme();
                     },
-                    icon: const Icon(Icons.dark_mode),
+                    icon: Icon(themeNotifier.getThemeIcon()),
                   )
                 ],
               )

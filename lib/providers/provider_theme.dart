@@ -1,14 +1,47 @@
 import 'package:flutter/material.dart';
 
-class MyTheme extends ChangeNotifier {
-  static bool _isDark = true;
+ThemeData light = ThemeData(
+  //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+  colorSchemeSeed: Colors.orange,
 
-  ThemeMode currentTheme() {
-    return _isDark ? ThemeMode.dark : ThemeMode.light;
+  useMaterial3: true,
+);
+
+ThemeData dark = ThemeData.dark(
+  useMaterial3: true,
+);
+
+class ThemeNotifier with ChangeNotifier {
+  ThemeData _themeData;
+
+  ThemeNotifier(this._themeData);
+
+  getTheme() => _themeData;
+
+  toggleTheme() async {
+    if (_themeData == dark) {
+      _themeData = light;
+    } else {
+      _themeData = dark;
+    }
+    notifyListeners();
   }
 
-  void switchTheme() {
-    _isDark = !_isDark;
+  getThemeIcon() {
+    if (_themeData == dark) {
+      return Icons.dark_mode;
+    } else {
+      return Icons.light_mode;
+    }
+    notifyListeners();
+  }
+
+  getText() {
+    if (_themeData == dark) {
+      return 'Dark';
+    } else {
+      return 'Light';
+    }
     notifyListeners();
   }
 }
