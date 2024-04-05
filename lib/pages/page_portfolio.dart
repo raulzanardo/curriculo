@@ -18,22 +18,37 @@ class _PagePortfolioState extends State<PagePortfolio> {
         child: SizedBox(
           width: 700,
           child: Align(
-            alignment: Alignment.topCenter,
 
+            alignment: Alignment.topCenter,
             child: Wrap(
               spacing: 20,
               runSpacing: 20,
               runAlignment: WrapAlignment.start,
-
               children: [
-
-                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
-                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
-                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
-                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
-                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada')
-
-
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                WidgetPortfolioItem(
+                    image: 'assets/images/photo.png',
+                    title: 'Lorem Ipsum',
+                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
               ],
             ),
           ),
