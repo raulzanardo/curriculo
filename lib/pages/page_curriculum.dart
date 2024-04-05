@@ -34,7 +34,7 @@ class _PageCurriculumState extends State<PageCurriculum> {
                   Container(
                     alignment: Alignment.center,
                     width: (MediaQuery.of(context).size.width > 800) ? 200 : double.infinity,
-                    child: WidgetPhoto(),
+                    child: const WidgetPhoto(),
                   ),
                   Container(
                     padding: (MediaQuery.of(context).size.width > 800) ? const EdgeInsets.fromLTRB(20.0, 0, 0, 20.0) : const EdgeInsets.all(0.0),
@@ -61,7 +61,7 @@ class _PageCurriculumState extends State<PageCurriculum> {
                 ],
               ),
               SizedBox(height: 20.0),
-              Text(
+              SelectableText(
                 'Experiência Profissional',
                 style: TextStyle(
                   fontSize: 24.0,

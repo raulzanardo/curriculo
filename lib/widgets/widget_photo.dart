@@ -37,7 +37,7 @@ class WidgetPhoto extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20.0),
-        const Text(
+        const SelectableText(
           'Raul Zanardo',
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class WidgetPhoto extends StatelessWidget {
             onTap: () {
               launchUrl(emailLaunchUri);
             },
-            child: const Text(
+            child: const SelectableText(
               'raulzanardo@gmail.com',
               style: TextStyle(
                 color: Colors.blue,

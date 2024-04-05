@@ -49,14 +49,14 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
                 ),
               ),
               const SizedBox(height: 10.0),
-              Text(
+              SelectableText(
                 widget.title,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
-              Text(
+              SelectableText(
                 widget.body,
                 textAlign: TextAlign.justify,
               ), //TODO Adicionar mail-to

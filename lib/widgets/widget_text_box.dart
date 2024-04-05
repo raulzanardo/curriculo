@@ -18,14 +18,14 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 20.0),
-        Text(
+        SelectableText (
           widget.title,
           style: const TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(
+        SelectableText (
           widget.body,
           textAlign: TextAlign.justify,
         ),
