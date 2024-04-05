@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   i18n_extension: ^11.0.12
   provider: ^6.1.2
+  flutter_launcher_icons: ^0.13.1
 
 
 dev_dependencies:
@@ -95,3 +96,23 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flutter_launcher_icons:
+  ios: true
+  android: true
+  web:
+    generate: true
+    image_path: "assets/launcher/favicon.png"
+    background_color: "#ee1b2d"
+    theme_color: "#ffffff"
+  windows:
+    generate: true
+    image_path: "assets/launcher/winicon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  remove_alpha_ios: true
+  image_path_ios: "assets/launcher/iconiOS.png"
+  image_path_android: "assets/launcher/icon.png"
+  adaptive_icon_background: "assets/launcher/background.png"
+  adaptive_icon_foreground: "assets/launcher/foreground.png"
+  macos:
+    generate: true
+    image_path: "assets/launcher/iconMacOS.png"

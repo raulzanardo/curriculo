@@ -55,7 +55,7 @@ class _PageHomeState extends State<PageHome> {
                       }
                       setState(() {});
                     },
-                    //TODO melhorar o icone de idioma
+
                     icon: const Icon(Icons.language),
                   ),
                   IconButton(

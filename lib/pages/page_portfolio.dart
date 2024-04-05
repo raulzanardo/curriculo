@@ -27,10 +27,12 @@ class _PagePortfolioState extends State<PagePortfolio> {
 
               children: [
 
-                WidgetPortfolioItem(),
-                WidgetPortfolioItem(),
-                WidgetPortfolioItem(),
-                WidgetPortfolioItem(),
+                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
+                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
+                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
+                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada'),
+                WidgetPortfolioItem(image: 'assets/images/photo.png', title: 'Copal', body: 'Um app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizadaUm app para paletização rototizada')
+
 
               ],
             ),
