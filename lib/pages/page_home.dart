@@ -29,6 +29,7 @@ class _PageHomeState extends State<PageHome> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TabBar(
+                labelPadding: const EdgeInsets.symmetric(horizontal: 10),
                 dividerHeight: 0,
                 tabAlignment: TabAlignment.start,
                 isScrollable: true,
@@ -55,12 +56,10 @@ class _PageHomeState extends State<PageHome> {
                       }
                       setState(() {});
                     },
-
                     icon: const Icon(Icons.language),
                   ),
                   IconButton(
-                    tooltip:  themeNotifier.getText(),
-
+                    tooltip: themeNotifier.getText(),
                     onPressed: () {
                       themeNotifier.toggleTheme();
                     },

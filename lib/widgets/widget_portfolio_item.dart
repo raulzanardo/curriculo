@@ -1,14 +1,13 @@
 import 'package:curriculo/pages/page_porfolio_item.dart';
 import 'package:flutter/material.dart';
 
-//TODO a largura quando o wrap esta em coluna fica mto pequena
-
 class WidgetPortfolioItem extends StatefulWidget {
   String image;
   String title;
   String body;
 
   WidgetPortfolioItem({
+    super.key,
     required this.image,
     required this.title,
     required this.body,

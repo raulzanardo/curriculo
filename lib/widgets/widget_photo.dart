@@ -1,4 +1,19 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'package:url_launcher/url_launcher.dart';
+
+String? encodeQueryParameters(Map<String, String> params) {
+  return params.entries.map((MapEntry<String, String> e) => '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}').join('&');
+}
+
+final Uri emailLaunchUri = Uri(
+  scheme: 'mailto',
+  path: 'raulzanardo@gmail.com',
+  query: encodeQueryParameters(<String, String>{
+    'subject': 'Olá!',
+  }),
+);
 
 class WidgetPhoto extends StatelessWidget {
   const WidgetPhoto({super.key});
@@ -10,10 +25,9 @@ class WidgetPhoto extends StatelessWidget {
       crossAxisAlignment: MediaQuery.of(context).size.width > 800 ? CrossAxisAlignment.start : CrossAxisAlignment.center,
       children: [
         Container(
-          //TODO ajustar tamanho dinamico da imagem
           width: 200,
           height: 200,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             shape: BoxShape.circle,
             color: Colors.white,
             image: DecorationImage(
@@ -23,14 +37,27 @@ class WidgetPhoto extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20.0),
-        Text(
+        const Text(
           'Raul Zanardo',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
         ),
-        Text('raulzanardo@gmail.com'), //TODO Adicionar mail-to
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: () {
+              launchUrl(emailLaunchUri);
+            },
+            child: const Text(
+              'raulzanardo@gmail.com',
+              style: TextStyle(
+                color: Colors.blue,
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }
