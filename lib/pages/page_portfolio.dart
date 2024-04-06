@@ -1,6 +1,8 @@
+import 'package:curriculo/pages/sub_page/page_porfolio_bingo.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_blitz.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_copal.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_item.dart';
+import 'package:curriculo/pages/sub_page/page_porfolio_rock.dart';
 import 'package:curriculo/widgets/widget_portfolio_item.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,6 @@ import 'package:flutter/material.dart';
 https://play.google.com/store/apps/details?id=com.pensenova.copalv2
 
 */
-
 
 class PagePortfolio extends StatefulWidget {
   const PagePortfolio({super.key});
@@ -43,8 +44,20 @@ class _PagePortfolioState extends State<PagePortfolio> {
                 WidgetPortfolioItem(
                   image: 'assets/images/portfolio/blitz_logo.png',
                   title: 'Blitz',
-                  body: ' Aplicativo para contagem de pontos no jogo de cartas Dutch Blitz',
+                  body: 'Aplicativo para contagem de pontos no jogo de cartas Dutch Blitz',
                   portfolioPage: PagePortfolioBlitz(),
+                ),
+                WidgetPortfolioItem(
+                  image: 'assets/images/portfolio/rock_logo.png',
+                  title: 'Rock Venue',
+                  body: 'Estudo de caso de aplicativo para venda de ingressos de uma banda de rock',
+                  portfolioPage: PagePortfolioRock(),
+                ),
+                WidgetPortfolioItem(
+                  image: 'assets/images/portfolio/bingo_logo.png',
+                  title: 'Bing-o',
+                  body: 'Jogo de bingo com frases no lugar dos números',
+                  portfolioPage: PagePortfolioBingo(),
                 ),
               ],
             ),
