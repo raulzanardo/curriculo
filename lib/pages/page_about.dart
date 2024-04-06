@@ -36,6 +36,26 @@ class _PageAboutState extends State<PageAbout> {
                 '',
                 'Já trabalhei programando Controladores lógicos industriais, desenvolvendo trajetórias e interfaces gráficas para sistemas que utilizam robôs de pintura e paletização, criando e integrando sistemas de monitoramento e coleta de dados para plantas industriais. Também me aventurei no mundo da música, como produtor, engenheiro de som de palco e em estúdios e como roadie.',
               ),
+              const SizedBox(height: 20.0),
+              LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+                  return Container(
+                    width: constraints.maxWidth,
+                    height: constraints.maxWidth*0.7,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                      color: Colors.white,
+                      image: DecorationImage(
+                        fit: BoxFit.fitWidth,
+                        image: AssetImage('assets/images/photo_about.png'),
+                      ),
+                    ),
+                  );
+
+
+                },
+              ),
             ],
           ),
         ),

@@ -29,7 +29,6 @@ class _PageCurriculumState extends State<PageCurriculum> {
               Wrap(
                 ///Foto e text (1 e 2)
                 //alignment: WrapAlignment.center,
-                crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
                   Container(
                     alignment: Alignment.center,
@@ -42,8 +41,7 @@ class _PageCurriculumState extends State<PageCurriculum> {
                     width: (MediaQuery.of(context).size.width > 800) ? 500 : double.infinity,
 
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+
                       children: [
                         WidgetTextBox(
                           'Objetivo'.i18n,
