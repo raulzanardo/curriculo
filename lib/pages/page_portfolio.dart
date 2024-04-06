@@ -1,3 +1,4 @@
+import 'package:curriculo/pages/sub_page/page_porfolio_blitz.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_copal.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_item.dart';
 import 'package:curriculo/widgets/widget_portfolio_item.dart';
@@ -38,6 +39,12 @@ class _PagePortfolioState extends State<PagePortfolio> {
                   title: 'Copal',
                   body: 'Aplicativo utilizado para parametrizar e controlar robôs de Paletização',
                   portfolioPage: PagePortfolioCopal(),
+                ),
+                WidgetPortfolioItem(
+                  image: 'assets/images/portfolio/blitz_logo.png',
+                  title: 'Blitz',
+                  body: ' Aplicativo para contagem de pontos no jogo de cartas Dutch Blitz',
+                  portfolioPage: PagePortfolioBlitz(),
                 ),
               ],
             ),
