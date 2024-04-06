@@ -47,7 +47,7 @@ class _PageHomeState extends State<PageHome> {
                 onTap: (index) {},
               ),
               Visibility(
-                visible: MediaQuery.of(context).size.width > 280,
+                visible: MediaQuery.of(context).size.width > 330,
                 child: Row(
                   children: [
                     IconButton(

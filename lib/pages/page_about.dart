@@ -37,6 +37,9 @@ class _PageAboutState extends State<PageAbout> {
                 'Já trabalhei programando Controladores lógicos industriais, desenvolvendo trajetórias e interfaces gráficas para sistemas que utilizam robôs de pintura e paletização, criando e integrando sistemas de monitoramento e coleta de dados para plantas industriais. Também me aventurei no mundo da música, como produtor, engenheiro de som de palco e em estúdios e como roadie.',
               ),
               const SizedBox(height: 20.0),
+
+              //TODO inserir links de conta
+              const SizedBox(height: 20.0),
               LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
                   return Container(

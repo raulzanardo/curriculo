@@ -41,7 +41,8 @@ class _PageCurriculumState extends State<PageCurriculum> {
                     width: (MediaQuery.of(context).size.width > 800) ? 500 : double.infinity,
 
                     child: Column(
-
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         WidgetTextBox(
                           'Objetivo'.i18n,

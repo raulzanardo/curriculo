@@ -14,9 +14,9 @@ https://itnext.io/an-easy-way-to-switch-between-dark-and-light-theme-in-flutter-
 https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-provider-e6ad1f023899
  */
 
-//TODO Criar localizations
-
-
+//TODO popular localizations
+//TODO criar e popular paginas de portifolio
+//
 
 void main() {
   runApp(
@@ -25,14 +25,11 @@ void main() {
       child: const MyApp(),
     ),
   );
-
-  //runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     final themeNotifier = Provider.of<ThemeNotifier>(context);
@@ -51,6 +48,8 @@ class MyApp extends StatelessWidget {
       ],
       theme: themeNotifier.getTheme(),
 
+      //TODO testar tema de sistema
+      themeMode: ThemeMode.system,
       home: I18n(
         initialLocale: const Locale('pt', 'BR'),
         //initialLocale: const Locale('en', 'US'),
