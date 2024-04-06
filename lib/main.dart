@@ -61,8 +61,8 @@ class MyApp extends StatelessWidget {
       theme: themeNotifier.getTheme(),
 
       home: I18n(
-        //initialLocale: const Locale('pt', 'BR'),
-         initialLocale: const Locale('en', 'US'),
+        initialLocale: const Locale('pt', 'BR'),
+        //initialLocale: const Locale('en', 'US'),
         child: const PageHome(),
       ),
     );

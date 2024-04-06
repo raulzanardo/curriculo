@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class WidgetTextBox extends StatefulWidget {
   String title;
 
-  WidgetTextBox(this.title, this.body);
+  WidgetTextBox(this.title, this.body, {super.key});
 
   String body;
 
@@ -18,14 +18,14 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 20.0),
-        SelectableText (
+        Text(
           widget.title,
           style: const TextStyle(
             fontSize: 20.0,
             fontWeight: FontWeight.bold,
           ),
         ),
-        SelectableText (
+        Text(
           widget.body,
           textAlign: TextAlign.justify,
         ),

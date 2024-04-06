@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
@@ -10,9 +11,11 @@ String? encodeQueryParameters(Map<String, String> params) {
 final Uri emailLaunchUri = Uri(
   scheme: 'mailto',
   path: 'raulzanardo@gmail.com',
-  query: encodeQueryParameters(<String, String>{
-    'subject': 'Olá!',
-  }),
+  query: encodeQueryParameters(
+    <String, String>{
+      'subject': 'Olá!',
+    },
+  ),
 );
 
 class WidgetPhoto extends StatelessWidget {
@@ -37,7 +40,7 @@ class WidgetPhoto extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20.0),
-        const SelectableText(
+        const Text(
           'Raul Zanardo',
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -50,7 +53,7 @@ class WidgetPhoto extends StatelessWidget {
             onTap: () {
               launchUrl(emailLaunchUri);
             },
-            child: const SelectableText(
+            child: const Text(
               'raulzanardo@gmail.com',
               style: TextStyle(
                 color: Colors.blue,

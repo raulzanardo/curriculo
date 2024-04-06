@@ -1,4 +1,5 @@
 import 'package:curriculo/pages/page_porfolio_item.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WidgetPortfolioItem extends StatefulWidget {
@@ -32,31 +33,35 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
           );
         },
         child: SizedBox(
-          width: 200,
+          //width: 200,
+          width: (MediaQuery.of(context).size.width < 500) ? double.infinity : 200,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(
-                width: 200,
-                height: 200,
-                decoration: BoxDecoration(
-                  borderRadius: const BorderRadius.all(Radius.circular(20)),
-                  color: Colors.white,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(widget.image),
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: const BorderRadius.all(Radius.circular(20)),
+                    color: Colors.white,
+                    image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage(widget.image),
+                    ),
                   ),
                 ),
               ),
               const SizedBox(height: 10.0),
-              SelectableText(
+              Text(
                 widget.title,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
-              SelectableText(
+              Text(
                 widget.body,
                 textAlign: TextAlign.justify,
               ), //TODO Adicionar mail-to
