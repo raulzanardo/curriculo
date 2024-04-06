@@ -14,9 +14,8 @@ https://itnext.io/an-easy-way-to-switch-between-dark-and-light-theme-in-flutter-
 https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-provider-e6ad1f023899
  */
 
-//TODO Criar localization do CV
-//FIXME corrigir overflow de pixel no menu em celulares pequenos
-//TODO Fazer repositorio especifico para o deplay na web
+//TODO Criar localizations
+
 
 ThemeData lightTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

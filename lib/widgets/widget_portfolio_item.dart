@@ -64,7 +64,7 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
               Text(
                 widget.body,
                 textAlign: TextAlign.justify,
-              ), //TODO Adicionar mail-to
+              ),
               const SizedBox(height: 20.0),
             ],
           ),

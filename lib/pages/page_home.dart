@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:i18n_extension/i18n_extension.dart';
 import 'package:provider/provider.dart';
@@ -44,28 +45,31 @@ class _PageHomeState extends State<PageHome> {
                 }).toList(),
                 onTap: (index) {},
               ),
-              Row(
-                children: [
-                  IconButton(
-                    tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
-                    onPressed: () {
-                      if (I18n.of(context).locale == const Locale("pt", "BR")) {
-                        I18n.of(context).locale = const Locale("en", "US");
-                      } else {
-                        I18n.of(context).locale = const Locale("pt", "BR");
-                      }
-                      setState(() {});
-                    },
-                    icon: const Icon(Icons.language),
-                  ),
-                  IconButton(
-                    tooltip: themeNotifier.getText(),
-                    onPressed: () {
-                      themeNotifier.toggleTheme();
-                    },
-                    icon: Icon(themeNotifier.getThemeIcon()),
-                  )
-                ],
+              Visibility(
+                visible: MediaQuery.of(context).size.width > 280,
+                child: Row(
+                  children: [
+                    IconButton(
+                      tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
+                      onPressed: () {
+                        if (I18n.of(context).locale == const Locale("pt", "BR")) {
+                          I18n.of(context).locale = const Locale("en", "US");
+                        } else {
+                          I18n.of(context).locale = const Locale("pt", "BR");
+                        }
+                        setState(() {});
+                      },
+                      icon: const Icon(Icons.language),
+                    ),
+                    IconButton(
+                      tooltip: themeNotifier.getText(),
+                      onPressed: () {
+                        themeNotifier.toggleTheme();
+                      },
+                      icon: Icon(themeNotifier.getThemeIcon()),
+                    )
+                  ],
+                ),
               )
             ],
           ),

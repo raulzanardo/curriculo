@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
@@ -27,15 +28,20 @@ class WidgetPhoto extends StatelessWidget {
     return Column(
       crossAxisAlignment: MediaQuery.of(context).size.width > 800 ? CrossAxisAlignment.start : CrossAxisAlignment.center,
       children: [
-        Container(
-          width: 200,
-          height: 200,
-          decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.white,
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage('assets/images/photo.png'),
+        GestureDetector(
+          onTap: () {
+            print(MediaQuery.of(context).size.width);
+          },
+          child: Container(
+            width: 200,
+            height: 200,
+            decoration: const BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.white,
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage('assets/images/photo.png'),
+              ),
             ),
           ),
         ),
