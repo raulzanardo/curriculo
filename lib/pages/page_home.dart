@@ -7,7 +7,7 @@ import '../main.dart';
 import 'package:curriculo/localization/localization_home.i18n.dart';
 import 'package:curriculo/providers/provider_theme.dart';
 import 'package:curriculo/pages/page_about.dart';
-import 'package:curriculo/pages/page_curriculum.dart';
+import 'package:curriculo/pages/page_resume.dart';
 import 'package:curriculo/pages/page_portfolio.dart';
 
 class PageHome extends StatefulWidget {
@@ -26,6 +26,7 @@ class _PageHomeState extends State<PageHome> {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

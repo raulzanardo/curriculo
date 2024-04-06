@@ -1,5 +1,14 @@
+import 'package:curriculo/pages/sub_page/page_porfolio_copal.dart';
+import 'package:curriculo/pages/sub_page/page_porfolio_item.dart';
 import 'package:curriculo/widgets/widget_portfolio_item.dart';
 import 'package:flutter/material.dart';
+
+/*
+
+https://play.google.com/store/apps/details?id=com.pensenova.copalv2
+
+*/
+
 
 class PagePortfolio extends StatefulWidget {
   const PagePortfolio({super.key});
@@ -18,7 +27,6 @@ class _PagePortfolioState extends State<PagePortfolio> {
         child: SizedBox(
           width: 700,
           child: Align(
-
             alignment: Alignment.topCenter,
             child: Wrap(
               spacing: 20,
@@ -26,29 +34,11 @@ class _PagePortfolioState extends State<PagePortfolio> {
               runAlignment: WrapAlignment.start,
               children: [
                 WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
-                WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
-                WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
-                WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
-                WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
-                WidgetPortfolioItem(
-                    image: 'assets/images/photo.png',
-                    title: 'Lorem Ipsum',
-                    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum'),
+                  image: 'assets/images/portfolio/copal_logo.png',
+                  title: 'Copal',
+                  body: 'Aplicativo utilizado para parametrizar e controlar robôs de Paletização',
+                  portfolioPage: PagePortfolioCopal(),
+                ),
               ],
             ),
           ),

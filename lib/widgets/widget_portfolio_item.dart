@@ -1,4 +1,4 @@
-import 'package:curriculo/pages/page_porfolio_item.dart';
+import 'package:curriculo/pages/sub_page/page_porfolio_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -6,12 +6,14 @@ class WidgetPortfolioItem extends StatefulWidget {
   String image;
   String title;
   String body;
+  Widget portfolioPage;
 
   WidgetPortfolioItem({
     super.key,
     required this.image,
     required this.title,
     required this.body,
+    required this.portfolioPage,
   });
 
   @override
@@ -27,9 +29,7 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
         onTap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              builder: (context) => const PagePortfolioItem(),
-            ),
+            MaterialPageRoute(builder: (context) => widget.portfolioPage),
           );
         },
         child: SizedBox(

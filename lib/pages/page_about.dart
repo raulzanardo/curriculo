@@ -18,8 +18,26 @@ class _PageAboutState extends State<PageAbout> {
         padding: const EdgeInsets.all(20),
         child: SizedBox(
           width: 700,
-          child: WidgetTextBox('Lorem Ipsum',
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum. Quisque eleifend lorem eu ex ornare dignissim. Donec augue felis, aliquet eleifend consectetur ac, fringilla sit amet odio. Sed eu purus sem. Nulla nec sagittis tortor, lacinia ornare lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris efficitur felis quis egestas maximus. Nullam varius libero non justo sodales, a feugiat odio euismod. Nullam pulvinar quam molestie, ornare tortor at, molestie diam. Donec ornare et ante eget posuere.'),
+          child: Column(
+            children: [
+              WidgetTextBox(
+                'Oi, meu nome é Raul!',
+                'Sou desenvolvedor Flutter há 3 anos. Como sou formado em Engenharia de controle e automação, desenvolvo aplicativos para o setor industrial, trabalhando desde o início do conceito, definindo e criando interfaces e fluxos de usuário, fazendo testes, até a publicação.',
+              ),
+              WidgetTextBox(
+                '',
+                'Nascido e criado em São Paulo, adoro exercitar minha criatividade programando, criando interfaces, desenvolvendo dispositivos eletrônicos e fazendo música.',
+              ),
+              WidgetTextBox(
+                '',
+                'Sou conhecido pela minha forma criativa de pensar e resolver problemas, minha paixão por construir e modificar coisas, por sempre pensar no futuro e não ter medo de experimentar ou fazer algo novo e excitante. Valorizando uma meta bem definida, com estrutura e ordem, gosto de comunicação clara e objetiva. Família e amigos são minhas coisas mais importantes.',
+              ),
+              WidgetTextBox(
+                '',
+                'Já trabalhei programando Controladores lógicos industriais, desenvolvendo trajetórias e interfaces gráficas para sistemas que utilizam robôs de pintura e paletização, criando e integrando sistemas de monitoramento e coleta de dados para plantas industriais. Também me aventurei no mundo da música, como produtor, engenheiro de som de palco e em estúdios e como roadie.',
+              ),
+            ],
+          ),
         ),
       ),
     );

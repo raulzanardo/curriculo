@@ -17,19 +17,11 @@ https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-pro
 //TODO Criar localizations
 
 
-ThemeData lightTheme = ThemeData(
-  colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-  useMaterial3: true,
-);
-
-ThemeData darkTheme = ThemeData.dark(
-  useMaterial3: true,
-);
 
 void main() {
   runApp(
     ChangeNotifierProvider<ThemeNotifier>(
-      create: (_) => ThemeNotifier(darkTheme),
+      create: (_) => ThemeNotifier(dark),
       child: const MyApp(),
     ),
   );

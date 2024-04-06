@@ -4,7 +4,7 @@ extension Localization on String {
   static final _t = Translations.byText("pt_br") +
       {
         "pt_br": "Currículo",
-        "en_us": "Curriculum",
+        "en_us": "Resume",
       } +
       {
         "pt_br": "Portfólio",
