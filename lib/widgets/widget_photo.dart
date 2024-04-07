@@ -1,3 +1,4 @@
+import 'package:curriculo/widgets/widget_custom_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -60,6 +61,34 @@ class WidgetPhoto extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
+          ),
+        ),
+
+        Visibility(
+          visible: (MediaQuery.of(context).size.width <= 800),
+          child: Column(
+
+            children: [
+              const SizedBox(height: 20.0),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () async  {
+                      launchUrl( Uri.parse('https://github.com/raulzanardo') );
+                    },
+                    icon: WidgetCustomIcon(iconName: 'github'),
+                  ),
+                  IconButton(
+                    onPressed: () {
+                      launchUrl( Uri.parse('https://www.linkedin.com/in/raulzanardo/') );
+                    },
+                    icon: WidgetCustomIcon(iconName: 'linkedin'),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ],

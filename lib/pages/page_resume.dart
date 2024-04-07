@@ -1,4 +1,7 @@
+import 'package:curriculo/widgets/widget_custom_icon.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../widgets/widget_photo.dart';
 import '../widgets/widget_text_box.dart';
@@ -51,6 +54,33 @@ class _PageCurriculumState extends State<PageCurriculum> {
                         WidgetTextBox(
                           'Resumo Profissional',
                           'Tenho experiência em desenvolvimento de aplicativos para Android e iOS usando Flutter e Dart, incluindo design de interface de usuário e lançamento nas lojas de aplicativos.',
+                        ),
+
+
+                        Visibility(
+                          visible: (MediaQuery.of(context).size.width > 800),
+                          child: Column(
+                            children: [
+                              const SizedBox(height: 20.0),
+                          
+                              Row(
+                                children: [
+                                  IconButton(
+                                    onPressed: () async  {
+                                      launchUrl( Uri.parse('https://github.com/raulzanardo') );
+                                    },
+                                    icon: WidgetCustomIcon(iconName: 'github'),
+                                  ),
+                                  IconButton(
+                                    onPressed: () {
+                                      launchUrl( Uri.parse('https://www.linkedin.com/in/raulzanardo/') );
+                                    },
+                                    icon: WidgetCustomIcon(iconName: 'linkedin'),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
