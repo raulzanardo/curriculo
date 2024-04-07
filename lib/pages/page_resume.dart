@@ -55,25 +55,22 @@ class _PageCurriculumState extends State<PageCurriculum> {
                           'Resumo Profissional',
                           'Tenho experiência em desenvolvimento de aplicativos para Android e iOS usando Flutter e Dart, incluindo design de interface de usuário e lançamento nas lojas de aplicativos.',
                         ),
-
-
                         Visibility(
                           visible: (MediaQuery.of(context).size.width > 800),
                           child: Column(
                             children: [
                               const SizedBox(height: 20.0),
-                          
                               Row(
                                 children: [
                                   IconButton(
-                                    onPressed: () async  {
-                                      launchUrl( Uri.parse('https://github.com/raulzanardo') );
+                                    onPressed: () async {
+                                      launchUrl(Uri.parse('https://github.com/raulzanardo'));
                                     },
                                     icon: WidgetCustomIcon(iconName: 'github'),
                                   ),
                                   IconButton(
                                     onPressed: () {
-                                      launchUrl( Uri.parse('https://www.linkedin.com/in/raulzanardo/') );
+                                      launchUrl(Uri.parse('https://www.linkedin.com/in/raulzanardo/'));
                                     },
                                     icon: WidgetCustomIcon(iconName: 'linkedin'),
                                   ),

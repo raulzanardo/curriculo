@@ -41,7 +41,6 @@ class _PageAboutState extends State<PageAbout> {
               ),
               const SizedBox(height: 20.0),
               Row(
-
                 children: [
                   const Icon(Icons.email),
                   const SizedBox(width: 5.0),
