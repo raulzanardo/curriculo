@@ -30,9 +30,30 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
           padding: const EdgeInsets.all(20),
           child: SizedBox(
             width: 700,
-            child: WidgetTextBox('Cooperative Paletazation - Copal',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tortor diam, accumsan sed lorem non, tristique venenatis lectus. Nulla tincidunt et libero sit amet porta. Aenean tristique dolor et sapien tristique, eu molestie sapien dictum. Quisque eleifend lorem eu ex ornare dignissim. Donec augue felis, aliquet eleifend consectetur ac, fringilla sit amet odio. Sed eu purus sem. Nulla nec sagittis tortor, lacinia ornare lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris efficitur felis quis egestas maximus. Nullam varius libero non justo sodales, a feugiat odio euismod. Nullam pulvinar quam molestie, ornare tortor at, molestie diam. Donec ornare et ante eget posuere.'),
+            child: Column(
+              children: [
+                WidgetTextBox('CoPal',
+                    'Copal vem de “Cooperative Palletization”, trata-se de um ecossistema integrado voltado à paletização inteligente utilizando robôs industriais em uma linha de produção. '),
+
+
+
+                WidgetTextBox('', 'O papel do aplicativo de parametrização e controle CoPal é facilitar as trocas de produtos e da maneira que os produtos são dispostos no palete, chamadas de “amarras”. O usuário consegue configurar todos os dados da parametrização, desde o tamanho do palete, o tamanho das caixas e amarras. Em seguida, o usuário pode enviar os dados para o robô e determinar qual função irá exercer.',),
+                WidgetTextBox('', 'O aplicativo foi desenvolvido em Flutter para Android e iOS e é disponibilizado livremente, apenas com a necessidade de uma chave de licença para que os dados possam ser enviados para o robô. ',),
+                WidgetTextBox('', 'A experiência do usuário é simples e o induz a seguir um “Wizard” com as etapas necessárias para a finalização da parametrização.  No final do processo o aplicativo acessa a tela remota do controlador do robô para que o mesmo seja acionado pelo aplicativo.',),
+                WidgetTextBox('PRINTS DAS TELAS DO APLICATIVO ', '',),
+                WidgetTextBox('', 'Com o intuito de unificar a experiência do usuário ao longo do ecossistema CoPal, também desenvolvi a interface gráfica da tela do controlador do robô. A interface tenta ser fiel ao aplicativo, mesmo com as limitações do sistema. ',),
+                WidgetTextBox('LINK PARA AS LOJAS', '',),
+                WidgetTextBox('', '',),
+                WidgetTextBox('', '',),
+                WidgetTextBox('', '',),
+                WidgetTextBox('', '',),
+
+
+              ],
+            ),
           ),
+
+
         ),
       ),
     );
