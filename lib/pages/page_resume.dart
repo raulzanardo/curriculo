@@ -10,14 +10,14 @@ import '../localization/localization_curriculum.i18n.dart';
 
 //https://www.coderzheaven.com/2019/04/26/tabbedappbar-in-flutter-android-and-ios/
 
-class PageCurriculum extends StatefulWidget {
-  const PageCurriculum({super.key});
+class PageResume extends StatefulWidget {
+  const PageResume({super.key});
 
   @override
-  State<PageCurriculum> createState() => _PageCurriculumState();
+  State<PageResume> createState() => _PageResumeState();
 }
 
-class _PageCurriculumState extends State<PageCurriculum> {
+class _PageResumeState extends State<PageResume> {
   @override
   Widget build(BuildContext context) {
     return Align(

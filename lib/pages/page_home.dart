@@ -77,7 +77,7 @@ class _PageHomeState extends State<PageHome> {
         ),
         body: const TabBarView(
           children: [
-            PageCurriculum(),
+            PageResume(),
             PagePortfolio(),
             PageAbout(),
           ],
