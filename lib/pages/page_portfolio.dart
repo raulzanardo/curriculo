@@ -12,6 +12,8 @@ https://play.google.com/store/apps/details?id=com.pensenova.copalv2
 
 */
 
+//TODO user hero nos items : https://api.flutter.dev/flutter/widgets/Hero-class.html
+
 class PagePortfolio extends StatefulWidget {
   const PagePortfolio({super.key});
 

@@ -101,6 +101,7 @@ class _PageAboutState extends State<PageAbout> {
                 ],
               ),
               const SizedBox(height: 20.0),
+              //TODO usar FittedBox
               LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
                   return Container(
