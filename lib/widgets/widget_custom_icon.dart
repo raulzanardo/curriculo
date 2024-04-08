@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-
+//TODO mudar pra SVG
 class WidgetCustomIcon extends StatefulWidget {
   String iconName;
 
