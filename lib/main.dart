@@ -15,7 +15,7 @@ https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-pro
  */
 
 //TODO popular localizations
-//TODO criar e popular paginas de portifolio
+//TODO popular paginas de portifolio
 //
 
 void main() {
