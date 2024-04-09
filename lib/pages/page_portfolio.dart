@@ -41,25 +41,37 @@ class _PagePortfolioState extends State<PagePortfolio> {
                   image: 'assets/images/portfolio/copal_logo.png',
                   title: 'Copal',
                   body: 'Aplicativo utilizado para parametrizar e controlar robôs de Paletização',
-                  portfolioPage: PagePortfolioCopal(),
+                  portfolioPage: PagePortfolioCopal(
+                    title: 'Copal',
+                    image: 'assets/images/portfolio/copal_logo.png',
+                  ),
                 ),
                 WidgetPortfolioItem(
                   image: 'assets/images/portfolio/blitz_logo.png',
                   title: 'Blitz',
                   body: 'Aplicativo para contagem de pontos no jogo de cartas Dutch Blitz',
-                  portfolioPage: PagePortfolioBlitz(),
+                  portfolioPage: PagePortfolioBlitz(
+                    title: 'Blitz',
+                    image: 'assets/images/portfolio/blitz_logo.png',
+                  ),
                 ),
                 WidgetPortfolioItem(
                   image: 'assets/images/portfolio/rock_logo.png',
                   title: 'Rock Venue',
                   body: 'Estudo de caso de aplicativo para venda de ingressos de uma banda de rock',
-                  portfolioPage: PagePortfolioRock(),
+                  portfolioPage: PagePortfolioRock(
+                    title: 'Rock Venue',
+                    image: 'assets/images/portfolio/rock_logo.png',
+                  ),
                 ),
                 WidgetPortfolioItem(
                   image: 'assets/images/portfolio/bingo_logo.png',
                   title: 'Bing-o',
                   body: 'Jogo de bingo com frases no lugar dos números',
-                  portfolioPage: PagePortfolioBingo(),
+                  portfolioPage: PagePortfolioBingo(
+                    title: 'Bing-o',
+                    image: 'assets/images/portfolio/bingo_logo.png',
+                  ),
                 ),
               ],
             ),

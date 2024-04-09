@@ -40,15 +40,19 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
             children: [
               Align(
                 alignment: Alignment.center,
-                child: Container(
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.all(Radius.circular(20)),
-                    color: Colors.white,
-                    image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage(widget.image),
+                child: Hero(
+                  tag: widget.title,
+                  child: Container(
+                    clipBehavior: Clip.antiAlias,
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      color: Colors.white,
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage(widget.image),
+                      ),
                     ),
                   ),
                 ),

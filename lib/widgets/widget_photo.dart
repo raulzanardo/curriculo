@@ -30,6 +30,7 @@ class WidgetPhoto extends StatelessWidget {
       crossAxisAlignment: MediaQuery.of(context).size.width > 800 ? CrossAxisAlignment.start : CrossAxisAlignment.center,
       children: [
         Container(
+
           width: 200,
           height: 200,
           decoration: const BoxDecoration(
@@ -39,6 +40,7 @@ class WidgetPhoto extends StatelessWidget {
               fit: BoxFit.fill,
               image: AssetImage('assets/images/photo.png'),
             ),
+
           ),
         ),
         const SizedBox(height: 20.0),
