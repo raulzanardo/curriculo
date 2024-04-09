@@ -46,7 +46,6 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                     height: 200,
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.all(Radius.circular(20)),
-                      color: Colors.white,
                       image: DecorationImage(
                         fit: BoxFit.fill,
                         image: AssetImage(widget.image),
