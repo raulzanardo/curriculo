@@ -1,3 +1,4 @@
+import 'package:curriculo/localization/localization_curriculum.i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -21,7 +22,7 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
         Visibility(
           visible: widget.title.isNotEmpty,
           child: Text(
-            widget.title,
+            widget.title.i18n,
             style: const TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
@@ -29,7 +30,7 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
           ),
         ),
         Text(
-          widget.body,
+          widget.body.i18n,
           textAlign: TextAlign.justify,
         ),
       ],

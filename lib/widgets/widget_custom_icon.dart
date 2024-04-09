@@ -16,12 +16,14 @@ class WidgetCustomIcon extends StatefulWidget {
 class _WidgetCustomIconState extends State<WidgetCustomIcon> {
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      width: 25,
-      height: 25,
-      'assets/images/icons/icon_${widget.iconName}_dark.svg',
-      //TODO verificar outro método para troca de cor do SVG
-      color: (Theme.of(context).brightness == Brightness.dark )  ? Colors.white : Colors.black,
+    return Center(
+      child: SvgPicture.asset(
+        width: 22,
+        height: 22,
+        'assets/images/icons/icon_${widget.iconName}_dark.svg',
+        //TODO verificar outro método para troca de cor do SVG
+        color: (Theme.of(context).brightness == Brightness.dark )  ? Colors.white : Colors.black,
+      ),
     );
   }
 }

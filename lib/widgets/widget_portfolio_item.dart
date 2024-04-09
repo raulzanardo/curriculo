@@ -1,3 +1,4 @@
+import 'package:curriculo/localization/localization_portfolio.i18n.dart';
 import 'package:curriculo/pages/sub_page/page_porfolio_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -59,14 +60,14 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
               ),
               const SizedBox(height: 10.0),
               Text(
-                widget.title,
+                widget.title.i18n,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
               Text(
-                widget.body,
+                widget.body.i18n,
                 textAlign: TextAlign.justify,
               ),
               const SizedBox(height: 20.0),

@@ -60,6 +60,7 @@ class _PageAboutState extends State<PageAbout> {
                   ),
                 ],
               ),
+              const SizedBox(height: 3.0),
               Row(
                 children: [
                   WidgetCustomIcon(iconName: 'github'),
@@ -80,6 +81,7 @@ class _PageAboutState extends State<PageAbout> {
                   ),
                 ],
               ),
+              const SizedBox(height: 3.0),
               Row(
                 children: [
                   WidgetCustomIcon(iconName: 'linkedin'),
