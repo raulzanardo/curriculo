@@ -46,7 +46,6 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                   title: Row(
                     mainAxisAlignment: (MediaQuery.of(context).size.width > 370) ? MainAxisAlignment.start : MainAxisAlignment.center,
                     children: [
-                      //TODO mudar para Actions
                       TabBar(
                         controller: _tabController,
                         labelPadding: const EdgeInsets.symmetric(horizontal: 10),
@@ -64,7 +63,7 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                         }).toList(),
                         onTap: (index) {},
                       ),
-                      //TODO mudar para Actions
+
                     ],
                   ),
                   actions: (MediaQuery.of(context).size.width > 370)

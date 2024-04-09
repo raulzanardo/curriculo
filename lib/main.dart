@@ -48,7 +48,6 @@ class MyApp extends StatelessWidget {
       ],
       theme: themeNotifier.getTheme(),
 
-      //TODO testar tema de sistema
       themeMode: ThemeMode.system,
       home: I18n(
         initialLocale: const Locale('pt', 'BR'),
