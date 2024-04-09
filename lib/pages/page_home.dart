@@ -17,7 +17,15 @@ class PageHome extends StatefulWidget {
   State<PageHome> createState() => _PageHomeState();
 }
 
-class _PageHomeState extends State<PageHome> {
+class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin {
+  late final TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     final themeNotifier = Provider.of<ThemeNotifier>(context);
@@ -25,62 +33,77 @@ class _PageHomeState extends State<PageHome> {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        appBar: AppBar(
-
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              TabBar(
-                labelPadding: const EdgeInsets.symmetric(horizontal: 10),
-                dividerHeight: 0,
-                tabAlignment: TabAlignment.start,
-                isScrollable: true,
-                tabs: [
-                  "Currículo".i18n,
-                  "Portfólio".i18n,
-                  "Sobre".i18n,
-                ].map<Tab>((String menuItem) {
-                  return Tab(
-                    text: menuItem,
-                  );
-                }).toList(),
-                onTap: (index) {},
-              ),
-              Visibility(
-                visible: MediaQuery.of(context).size.width > 330,
-                child: Row(
-                  children: [
-                    IconButton(
-                      tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
-                      onPressed: () {
-                        if (I18n.of(context).locale == const Locale("pt", "BR")) {
-                          I18n.of(context).locale = const Locale("en", "US");
-                        } else {
-                          I18n.of(context).locale = const Locale("pt", "BR");
-                        }
-                        setState(() {});
-                      },
-                      icon: const Icon(Icons.language),
-                    ),
-                    IconButton(
-                      tooltip: themeNotifier.getText(),
-                      onPressed: () {
-                        themeNotifier.toggleTheme();
-                      },
-                      icon: Icon(themeNotifier.getThemeIcon()),
-                    )
-                  ],
+        body: NestedScrollView(
+          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+            return <Widget>[
+              SliverAppBar(
+                //title: Text('Weight Tracker'),
+                pinned: MediaQuery.of(context).size.width > 800,
+                floating: true,
+                forceElevated: innerBoxIsScrolled,
+                title: AppBar(
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      //TODO mudar para Actions
+                      TabBar(
+                        controller: _tabController,
+                        labelPadding: const EdgeInsets.symmetric(horizontal: 10),
+                        dividerHeight: 0,
+                        tabAlignment: TabAlignment.start,
+                        isScrollable: true,
+                        tabs: [
+                          "Currículo".i18n,
+                          "Portfólio".i18n,
+                          "Sobre".i18n,
+                        ].map<Tab>((String menuItem) {
+                          return Tab(
+                            text: menuItem,
+                          );
+                        }).toList(),
+                        onTap: (index) {},
+                      ),
+                      //TODO mudar para Actions
+                      Visibility(
+                        visible: MediaQuery.of(context).size.width > 330,
+                        child: Row(
+                          children: [
+                            IconButton(
+                              tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
+                              onPressed: () {
+                                if (I18n.of(context).locale == const Locale("pt", "BR")) {
+                                  I18n.of(context).locale = const Locale("en", "US");
+                                } else {
+                                  I18n.of(context).locale = const Locale("pt", "BR");
+                                }
+                                setState(() {});
+                              },
+                              icon: const Icon(Icons.language),
+                            ),
+                            IconButton(
+                              tooltip: themeNotifier.getText(),
+                              onPressed: () {
+                                themeNotifier.toggleTheme();
+                              },
+                              icon: Icon(themeNotifier.getThemeIcon()),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-              )
+              ),
+            ];
+          },
+          body: TabBarView(
+            controller: _tabController,
+            children: const [
+              PageResume(),
+              PagePortfolio(),
+              PageAbout(),
             ],
           ),
-        ),
-        body: const TabBarView(
-          children: [
-            PageResume(),
-            PagePortfolio(),
-            PageAbout(),
-          ],
         ),
       ),
     );
