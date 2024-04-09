@@ -28,6 +28,7 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
+          //TODO alterar transição das paginas do portifolio
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => widget.portfolioPage),
