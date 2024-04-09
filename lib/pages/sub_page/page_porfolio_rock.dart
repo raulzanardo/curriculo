@@ -20,7 +20,6 @@ class _PagePortfolioRockState extends State<PagePortfolioRock> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 40,
         title: const Text('Rock'),
         centerTitle: false,
         automaticallyImplyLeading: false,

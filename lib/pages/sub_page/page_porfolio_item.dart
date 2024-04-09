@@ -16,7 +16,6 @@ class _PagePortfolioItemState extends State<PagePortfolioItem> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 40,
         title: const Text('Lorem Ipsum'),
         centerTitle: false,
         automaticallyImplyLeading: false,

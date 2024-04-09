@@ -22,7 +22,9 @@ class _PageAboutState extends State<PageAbout> {
         child: SizedBox(
           width: 700,
           child: Column(
+
             children: [
+
               WidgetTextBox(
                 'Oi, meu nome é Raul!',
                 'Sou desenvolvedor Flutter há 3 anos. Como sou formado em Engenharia de controle e automação, desenvolvo aplicativos para o setor industrial, trabalhando desde o início do conceito, definindo e criando interfaces e fluxos de usuário, fazendo testes, até a publicação.',

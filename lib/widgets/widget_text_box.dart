@@ -18,7 +18,7 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 20.0),
+
         Visibility(
           visible: widget.title.isNotEmpty,
           child: Text(
@@ -33,6 +33,7 @@ class _WidgetTextBoxState extends State<WidgetTextBox> {
           widget.body.i18n,
           textAlign: TextAlign.justify,
         ),
+        const SizedBox(height: 20.0),
       ],
     );
   }

@@ -20,7 +20,6 @@ class _PagePortfolioBlitzState extends State<PagePortfolioBlitz> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 40,
         title: const Text('Blitz'),
         centerTitle: false,
         automaticallyImplyLeading: false,

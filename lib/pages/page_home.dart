@@ -63,7 +63,6 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                         }).toList(),
                         onTap: (index) {},
                       ),
-
                     ],
                   ),
                   actions: (MediaQuery.of(context).size.width > 370)

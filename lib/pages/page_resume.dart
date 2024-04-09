@@ -59,7 +59,7 @@ class _PageResumeState extends State<PageResume> {
                           visible: (MediaQuery.of(context).size.width > 800),
                           child: Column(
                             children: [
-                              const SizedBox(height: 20.0),
+
                               Row(
                                 children: [
                                   IconButton(
@@ -86,7 +86,7 @@ class _PageResumeState extends State<PageResume> {
                   // --------------------------------------------------------------------------------------------------------------
                 ],
               ),
-              const SizedBox(height: 20.0),
+
               Text(
                 'Experiência Profissional'.i18n,
                 style: const TextStyle(
@@ -94,6 +94,7 @@ class _PageResumeState extends State<PageResume> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              const SizedBox(height: 20.0),
               WidgetTextBox(
                 'Desenvolvedor de automação na Nova Tecnologia',
                 'Desenvolvimento de projetos de automação envolvendo sistemas de monitoramento industrial (Scada), robótica e aplicações voltadas para processos de pintura industrial. Elaboração de esquemas elétricos para montagem de quadros elétricos utilizando o EPLAN. – 06/10/2014 até 30/04/2018',
@@ -106,7 +107,7 @@ class _PageResumeState extends State<PageResume> {
                 'Estagiário de automação na Nova Tecnologia',
                 'Desenvolvimento de sistemas de controle e automação predial e de eficiência energética.  05/11/2012 até 25/10/2013.',
               ),
-              const SizedBox(height: 20.0),
+
               Text(
                 'Formação Acadêmica'.i18n,
                 style: const TextStyle(
@@ -114,6 +115,7 @@ class _PageResumeState extends State<PageResume> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
+              const SizedBox(height: 20.0),
               WidgetTextBox(
                 'Graduação em Engenharia de Controle e Automação',
                 'IFSP Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - 01/06/2009 a 28/08/2019',
@@ -122,7 +124,7 @@ class _PageResumeState extends State<PageResume> {
                 'Técnico em Eletrônica',
                 'ETEC Professor Aprígio Gonzaga - 01/06/2007 a 15/12/2008',
               ),
-              const SizedBox(height: 20.0),
+
               Text(
                 'Cursos Complementares'.i18n,
                 style: const TextStyle(

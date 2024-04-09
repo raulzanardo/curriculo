@@ -20,7 +20,7 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 40,
+
         title: const Text('Copal'),
         centerTitle: false,
         automaticallyImplyLeading: false,
