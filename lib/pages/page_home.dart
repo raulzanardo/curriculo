@@ -41,9 +41,10 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                 pinned: MediaQuery.of(context).size.width > 800,
                 floating: true,
                 forceElevated: innerBoxIsScrolled,
+
                 title: AppBar(
                   title: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: (MediaQuery.of(context).size.width > 370) ? MainAxisAlignment.start : MainAxisAlignment.center,
                     children: [
                       //TODO mudar para Actions
                       TabBar(
@@ -64,34 +65,31 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                         onTap: (index) {},
                       ),
                       //TODO mudar para Actions
-                      Visibility(
-                        visible: MediaQuery.of(context).size.width > 330,
-                        child: Row(
-                          children: [
-                            IconButton(
-                              tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
-                              onPressed: () {
-                                if (I18n.of(context).locale == const Locale("pt", "BR")) {
-                                  I18n.of(context).locale = const Locale("en", "US");
-                                } else {
-                                  I18n.of(context).locale = const Locale("pt", "BR");
-                                }
-                                setState(() {});
-                              },
-                              icon: const Icon(Icons.language),
-                            ),
-                            IconButton(
-                              tooltip: themeNotifier.getText(),
-                              onPressed: () {
-                                themeNotifier.toggleTheme();
-                              },
-                              icon: Icon(themeNotifier.getThemeIcon()),
-                            )
-                          ],
-                        ),
-                      )
                     ],
                   ),
+                  actions: (MediaQuery.of(context).size.width > 370)
+                      ? [
+                          IconButton(
+                            tooltip: I18n.of(context).locale.languageCode.toUpperCase(),
+                            onPressed: () {
+                              if (I18n.of(context).locale == const Locale("pt", "BR")) {
+                                I18n.of(context).locale = const Locale("en", "US");
+                              } else {
+                                I18n.of(context).locale = const Locale("pt", "BR");
+                              }
+                              setState(() {});
+                            },
+                            icon: const Icon(Icons.language),
+                          ),
+                          IconButton(
+                            tooltip: themeNotifier.getText(),
+                            onPressed: () {
+                              themeNotifier.toggleTheme();
+                            },
+                            icon: Icon(themeNotifier.getThemeIcon()),
+                          )
+                        ]
+                      : <Widget>[],
                 ),
               ),
             ];
