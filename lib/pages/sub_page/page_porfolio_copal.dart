@@ -83,136 +83,70 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                   '',
                   'A experiência do usuário é simples e o induz a seguir um “Wizard” com as etapas necessárias para a finalização da parametrização.  No final do processo o aplicativo acessa a tela remota do controlador do robô para que o mesmo seja acionado pelo aplicativo.'.i18n,
                 ),
-                //TODO Arrumar sub pagina de prints
-                //TODO inserir botões na sub pagina de prints
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          showDialog(
-                            context: context,
-                            builder: (context) {
-                              return AlertDialog(
-                                backgroundColor: Theme.of(context).dialogBackgroundColor.withOpacity(0.7),
-                                insetPadding: const EdgeInsets.all(10),
-                                contentPadding: const EdgeInsets.all(10),
-                                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
-                                title: Row(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                      icon: const Icon(Icons.close),
-                                    ),
-                                  ],
+                //TODO Arrumar transparencia das imagens dos prints
+                MouseRegion(
+                  cursor: SystemMouseCursors.click,
+                  child: GestureDetector(
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            backgroundColor: Theme.of(context).dialogBackgroundColor.withOpacity(0.7),
+                            insetPadding: const EdgeInsets.all(10),
+                            contentPadding: const EdgeInsets.all(10),
+                            shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                            title: Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {
+                                    Navigator.of(context).pop();
+                                  },
+                                  icon: const Icon(Icons.close),
                                 ),
-                                content: Container(
-                                  width: double.maxFinite,
-                                  decoration: const BoxDecoration(
-                                    image: DecorationImage(
-                                      fit: BoxFit.scaleDown,
-                                      image: AssetImage('assets/images/portfolio/copal/2_menu.png'),
-                                    ),
-                                  ),
-                                ),
-                                actionsAlignment: MainAxisAlignment.spaceBetween,
-                              );
-                            },
-                          );
-                        },
-                        child: Container(
-                          height: 200,
-                          width: 100,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.fitHeight,
-                              image: AssetImage('assets/images/portfolio/copal/2_Menu.png'),
+                              ],
                             ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          showDialog(
-                            context: context,
-                            builder: (context) {
-                              return AlertDialog(
-                                backgroundColor: Theme.of(context).dialogBackgroundColor.withOpacity(0.7),
-                                insetPadding: const EdgeInsets.all(10),
-                                contentPadding: const EdgeInsets.all(10),
-                                shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
-                                title: Row(
-                                  children: [
-                                    IconButton(
-                                      onPressed: () {
-                                        Navigator.of(context).pop();
-                                      },
-                                      icon: const Icon(Icons.close),
-                                    ),
-                                  ],
+                            content: SizedBox(
+                              width: double.maxFinite,
+                              height: double.maxFinite,
+                              child: CarouselSlider(
+                                options: CarouselOptions(
+                                  height: double.maxFinite,
                                 ),
-                                content: Container(
-                                  width: double.maxFinite,
-                                  child: CarouselSlider(
-                                    options: CarouselOptions(),
-                                    items: printsList.map((i) {
-                                      return Builder(
-                                        builder: (BuildContext context) {
-
-                                          return Container(
-                                            width: double.maxFinite,
-                                            decoration:  BoxDecoration(
-                                              image: DecorationImage(
-                                                fit: BoxFit.scaleDown,
-                                                image: AssetImage('assets/images/portfolio/copal/$i'),
-                                              ),
-                                            ),
-                                          );
-
-                                          return Container(
-                                              width: MediaQuery.of(context).size.width,
-                                              margin: EdgeInsets.symmetric(horizontal: 5.0),
-                                              decoration: BoxDecoration(color: Colors.amber),
-                                              child: Text(
-                                                'text $i',
-                                                style: TextStyle(fontSize: 16.0),
-                                              ));
-                                        },
+                                items: printsList.map((i) {
+                                  return Builder(
+                                    builder: (BuildContext context) {
+                                      return Container(
+                                        width: double.maxFinite,
+                                        height: double.maxFinite,
+                                        decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                            fit: BoxFit.fitHeight,
+                                            image: AssetImage('assets/images/portfolio/copal/$i'),
+                                          ),
+                                        ),
                                       );
-                                    }).toList(),
-                                  ),
-/*                                  decoration: const BoxDecoration(
-                                    image: DecorationImage(
-                                      fit: BoxFit.scaleDown,
-                                      image: AssetImage('assets/images/portfolio/copal/5_pallet.png'),
-                                    ),
-                                  ),*/
-                                ),
-                                actionsAlignment: MainAxisAlignment.spaceBetween,
-                              );
-                            },
+                                    },
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                            actionsAlignment: MainAxisAlignment.spaceBetween,
                           );
                         },
-                        child: Container(
-                          height: 200,
-                          width: 100,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.fitHeight,
-                              image: AssetImage('assets/images/portfolio/copal/5_pallet.png'),
-                            ),
-                          ),
+                      );
+                    },
+                    child: Container(
+                      height: 200,
+                      width: 100,
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fitHeight,
+                          image: AssetImage('assets/images/portfolio/copal/5_pallet.png'),
                         ),
                       ),
                     ),
-                  ],
+                  ),
                 ),
                 const SizedBox(height: 20.0),
                 WidgetTextBox(
@@ -220,47 +154,66 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                   'Com o intuito de unificar a experiência do usuário ao longo do ecossistema CoPal, também desenvolvi a interface gráfica da tela do controlador do robô. A interface tenta ser fiel ao aplicativo, mesmo com as limitações do sistema.'.i18n,
                 ),
                 //FIXME corrigir largura dos icones das paginas de store
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          launchUrl(Uri.parse('https://apps.apple.com/br/app/copal/id1660752505/'));
-                        },
-                        child: Container(
-                          height: 100,
-                          width: MediaQuery.of(context).size.width / 3,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.fitWidth,
-                              image: AssetImage('assets/images/app_store.png'),
+
+                LayoutBuilder(
+                  builder: (BuildContext context, BoxConstraints constraints) {
+                    return Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              launchUrl(Uri.parse('https://apps.apple.com/br/app/copal/id1660752505/'));
+                            },
+                            child: Container(
+                              height: 100,
+                              width: constraints.maxWidth / 3,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.fitWidth,
+                                  image: AssetImage('assets/images/app_store.png'),
+                                ),
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                    MouseRegion(
-                      cursor: SystemMouseCursors.click,
-                      child: GestureDetector(
-                        onTap: () {
-                          launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.pensenova.copalv2&hl=pt&gl=US'));
-                        },
-                        child: Container(
-                          height: 100,
-                          width: MediaQuery.of(context).size.width / 3,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.fitWidth,
-                              image: AssetImage('assets/images/google_play.png'),
+                        MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: GestureDetector(
+                            onTap: () {
+                              launchUrl(Uri.parse('https://play.google.com/store/apps/details?id=com.pensenova.copalv2&hl=pt&gl=US'));
+                            },
+                            child: Container(
+                              height: 100,
+                              width: constraints.maxWidth / 3,
+                              decoration: const BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.fitWidth,
+                                  image: AssetImage('assets/images/google_play.png'),
+                                ),
+                              ),
                             ),
                           ),
+                        )
+                      ],
+                    );
+
+                    return Container(
+                      width: constraints.maxWidth,
+                      height: constraints.maxWidth * 0.7,
+                      decoration: const BoxDecoration(
+                        shape: BoxShape.rectangle,
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                        color: Colors.white,
+                        image: DecorationImage(
+                          fit: BoxFit.fitWidth,
+                          image: AssetImage('assets/images/photo_about.png'),
                         ),
                       ),
-                    )
-                  ],
-                )
+                    );
+                  },
+                ),
               ],
             ),
           ),
