@@ -8,12 +8,14 @@ class WidgetPortfolioItem extends StatefulWidget {
   String title;
   String body;
   Widget portfolioPage;
+  Color backgroundColor;
 
   WidgetPortfolioItem({
     super.key,
     required this.image,
     required this.title,
     required this.body,
+    required this.backgroundColor,
     required this.portfolioPage,
   });
 
@@ -50,9 +52,9 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
                     height: 200,
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.all(Radius.circular(20)),
-                      color: Colors.white,
+                      color: widget.backgroundColor,
                       image: DecorationImage(
-                        fit: BoxFit.fill,
+                        fit: BoxFit.fitHeight,
                         image: AssetImage(widget.image),
                       ),
                     ),

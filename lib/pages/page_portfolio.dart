@@ -40,15 +40,17 @@ class _PagePortfolioState extends State<PagePortfolio> {
                   image: 'assets/images/portfolio/copal_logo.png',
                   title: 'Copal',
                   body: 'Aplicativo utilizado para parametrizar e controlar robôs de Paletização',
+                  backgroundColor: const Color.fromARGB(255, 97, 126, 139),
                   portfolioPage: PagePortfolioCopal(
                     title: 'Copal',
                     image: 'assets/images/portfolio/copal_logo.png',
                   ),
                 ),
-                WidgetPortfolioItem(
+/*                WidgetPortfolioItem(
                   image: 'assets/images/portfolio/blitz_logo.png',
                   title: 'Blitz',
                   body: 'Aplicativo para contagem de pontos no jogo de cartas Dutch Blitz',
+                  backgroundColor: Colors.white,
                   portfolioPage: PagePortfolioBlitz(
                     title: 'Blitz',
                     image: 'assets/images/portfolio/blitz_logo.png',
@@ -58,6 +60,7 @@ class _PagePortfolioState extends State<PagePortfolio> {
                   image: 'assets/images/portfolio/rock_logo.png',
                   title: 'Rock Venue',
                   body: 'Estudo de caso de aplicativo para venda de ingressos de uma banda de rock',
+                  backgroundColor: Colors.white,
                   portfolioPage: PagePortfolioRock(
                     title: 'Rock Venue',
                     image: 'assets/images/portfolio/rock_logo.png',
@@ -67,11 +70,12 @@ class _PagePortfolioState extends State<PagePortfolio> {
                   image: 'assets/images/portfolio/bingo_logo.png',
                   title: 'Bing-o',
                   body: 'Jogo de bingo com frases no lugar dos números',
+                  backgroundColor: Colors.white,
                   portfolioPage: PagePortfolioBingo(
                     title: 'Bing-o',
                     image: 'assets/images/portfolio/bingo_logo.png',
                   ),
-                ),
+                ),*/
               ],
             ),
           ),

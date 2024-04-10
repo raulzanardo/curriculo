@@ -42,17 +42,21 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                 Hero(
                   tag: widget.title,
                   child: Container(
-                    width: 200,
+                    //width: 200,
                     height: 200,
                     decoration: BoxDecoration(
                       borderRadius: const BorderRadius.all(Radius.circular(20)),
+                      color: const Color.fromARGB(255, 97, 126, 139),
                       image: DecorationImage(
-                        fit: BoxFit.fill,
+                        fit: BoxFit.fitHeight,
                         image: AssetImage(widget.image),
+
                       ),
                     ),
                   ),
                 ),
+
+                const SizedBox(height: 20.0),
                 WidgetTextBox('CoPal', 'Copal vem de “Cooperative Palletization”, trata-se de um ecossistema integrado voltado à paletização inteligente utilizando robôs industriais em uma linha de produção. '),
                 WidgetTextBox(
                   '',
