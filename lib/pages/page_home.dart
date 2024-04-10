@@ -43,27 +43,23 @@ class _PageHomeState extends State<PageHome> with SingleTickerProviderStateMixin
                 forceElevated: innerBoxIsScrolled,
 
                 title: AppBar(
-                  title: Row(
-                    mainAxisAlignment: (MediaQuery.of(context).size.width > 370) ? MainAxisAlignment.start : MainAxisAlignment.center,
-                    children: [
-                      TabBar(
-                        controller: _tabController,
-                        labelPadding: const EdgeInsets.symmetric(horizontal: 10),
-                        dividerHeight: 0,
-                        tabAlignment: TabAlignment.start,
-                        isScrollable: true,
-                        tabs: [
-                          "Currículo".i18n,
-                          "Portfólio".i18n,
-                          "Sobre".i18n,
-                        ].map<Tab>((String menuItem) {
-                          return Tab(
-                            text: menuItem,
-                          );
-                        }).toList(),
-                        onTap: (index) {},
-                      ),
-                    ],
+                  centerTitle:  (MediaQuery.of(context).size.width < 370) ,
+                  title: TabBar(
+                    controller: _tabController,
+                    labelPadding: const EdgeInsets.symmetric(horizontal: 10),
+                    dividerHeight: 0,
+                    tabAlignment: TabAlignment.start,
+                    isScrollable: true,
+                    tabs: [
+                      "Currículo".i18n,
+                      "Portfólio".i18n,
+                      "Sobre".i18n,
+                    ].map<Tab>((String menuItem) {
+                      return Tab(
+                        text: menuItem,
+                      );
+                    }).toList(),
+                    onTap: (index) {},
                   ),
                   actions: (MediaQuery.of(context).size.width > 370)
                       ? [
