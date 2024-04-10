@@ -1,10 +1,20 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:curriculo/localization/localization_portfolio_copal.i18n.dart';
 import 'package:curriculo/widgets/widget_text_box.dart';
 
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-int copalSelectedPrint = 0;
+List<String> printsList = [
+  "1_Home.png",
+  "2_Menu.png",
+  "3_Pallet.png",
+  "4_Box.png",
+  "5_Pallet.png",
+  "6_Robot.png",
+  "7_Conversion.png",
+  "8_Settings.png",
+];
 
 class PagePortfolioCopal extends StatefulWidget {
   String title;
@@ -62,7 +72,8 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                 WidgetTextBox('CoPal', 'Copal vem de “Cooperative Palletization”, trata-se de um ecossistema integrado voltado à paletização inteligente utilizando robôs industriais em uma linha de produção.'.i18n),
                 WidgetTextBox(
                   '',
-                  'O papel do aplicativo de parametrização e controle CoPal é facilitar as trocas de produtos e da maneira que os produtos são dispostos no palete, chamadas de “amarras”. O usuário consegue configurar todos os dados da parametrização, desde o tamanho do palete, o tamanho das caixas e amarras. Em seguida, o usuário pode enviar os dados para o robô e determinar qual função irá exercer.'.i18n,
+                  'O papel do aplicativo de parametrização e controle CoPal é facilitar as trocas de produtos e da maneira que os produtos são dispostos no palete, chamadas de “amarras”. O usuário consegue configurar todos os dados da parametrização, desde o tamanho do palete, o tamanho das caixas e amarras. Em seguida, o usuário pode enviar os dados para o robô e determinar qual função irá exercer.'
+                      .i18n,
                 ),
                 WidgetTextBox(
                   '',
@@ -72,6 +83,8 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                   '',
                   'A experiência do usuário é simples e o induz a seguir um “Wizard” com as etapas necessárias para a finalização da parametrização.  No final do processo o aplicativo acessa a tela remota do controlador do robô para que o mesmo seja acionado pelo aplicativo.'.i18n,
                 ),
+                //TODO Arrumar sub pagina de prints
+                //TODO inserir botões na sub pagina de prints
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
@@ -147,12 +160,40 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                                 ),
                                 content: Container(
                                   width: double.maxFinite,
-                                  decoration: const BoxDecoration(
+                                  child: CarouselSlider(
+                                    options: CarouselOptions(),
+                                    items: printsList.map((i) {
+                                      return Builder(
+                                        builder: (BuildContext context) {
+
+                                          return Container(
+                                            width: double.maxFinite,
+                                            decoration:  BoxDecoration(
+                                              image: DecorationImage(
+                                                fit: BoxFit.scaleDown,
+                                                image: AssetImage('assets/images/portfolio/copal/$i'),
+                                              ),
+                                            ),
+                                          );
+
+                                          return Container(
+                                              width: MediaQuery.of(context).size.width,
+                                              margin: EdgeInsets.symmetric(horizontal: 5.0),
+                                              decoration: BoxDecoration(color: Colors.amber),
+                                              child: Text(
+                                                'text $i',
+                                                style: TextStyle(fontSize: 16.0),
+                                              ));
+                                        },
+                                      );
+                                    }).toList(),
+                                  ),
+/*                                  decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       fit: BoxFit.scaleDown,
                                       image: AssetImage('assets/images/portfolio/copal/5_pallet.png'),
                                     ),
-                                  ),
+                                  ),*/
                                 ),
                                 actionsAlignment: MainAxisAlignment.spaceBetween,
                               );
@@ -178,6 +219,7 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                   '',
                   'Com o intuito de unificar a experiência do usuário ao longo do ecossistema CoPal, também desenvolvi a interface gráfica da tela do controlador do robô. A interface tenta ser fiel ao aplicativo, mesmo com as limitações do sistema.'.i18n,
                 ),
+                //FIXME corrigir largura dos icones das paginas de store
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
