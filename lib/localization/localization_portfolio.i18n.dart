@@ -3,16 +3,16 @@ import 'package:i18n_extension/i18n_extension.dart';
 extension Localization on String {
   static final _t = Translations.byText("pt_br") +
       {
-        "pt_br": "Sim",
+        "pt_br": "",
         "en_us": "Yes",
       } +
       {
-        "pt_br": "Não",
-        "en_us": "No",
+        "pt_br": "Aplicativo utilizado para parametrizar e controlar robôs de Paletização",
+        "en_us": "Application used to parameterize and control palletizing robots",
       } +
       {
-        "pt_br": "Objetivo",
-        "en_us": "Goal",
+        "pt_br": "",
+        "en_us": "",
       };
 
   String get i18n => localize(this, _t);

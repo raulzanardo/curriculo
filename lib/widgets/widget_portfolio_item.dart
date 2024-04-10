@@ -63,14 +63,14 @@ class _WidgetPortfolioItemState extends State<WidgetPortfolioItem> {
               ),
               const SizedBox(height: 10.0),
               Text(
-                widget.title.i18n,
+                widget.title,
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
               ),
               Text(
-                widget.body.i18n,
+                widget.body,
                 textAlign: TextAlign.justify,
               ),
               const SizedBox(height: 20.0),
