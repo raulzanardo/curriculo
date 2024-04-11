@@ -175,7 +175,7 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                       decoration: const BoxDecoration(
                         image: DecorationImage(
                           fit: BoxFit.fitHeight,
-                          image: AssetImage('assets/images/portfolio/copal/5_pallet.png'),
+                          image: AssetImage('assets/images/portfolio/copal/1_Home.png'),
                         ),
                       ),
                     ),
