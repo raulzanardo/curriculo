@@ -31,6 +31,8 @@ class PagePortfolioCopal extends StatefulWidget {
 }
 
 class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
+  CarouselController _carouselController = CarouselController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -109,26 +111,57 @@ class _PagePortfolioCopalState extends State<PagePortfolioCopal> {
                             content: SizedBox(
                               width: double.maxFinite,
                               height: double.maxFinite,
-                              child: CarouselSlider(
-                                options: CarouselOptions(
-                                  height: double.maxFinite,
-                                ),
-                                items: printsList.map((i) {
-                                  return Builder(
-                                    builder: (BuildContext context) {
-                                      return Container(
-                                        width: double.maxFinite,
-                                        height: double.maxFinite,
-                                        decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                            fit: BoxFit.fitHeight,
-                                            image: AssetImage('assets/images/portfolio/copal/$i'),
+                              child: Stack(
+                                children: [
+                                  CarouselSlider(
+                                    options: CarouselOptions(
+                                      height: double.maxFinite,
+                                      viewportFraction: 2,
+                                    ),
+                                    carouselController: _carouselController,
+                                    items: printsList.map(
+                                      (i) {
+                                        return Builder(
+                                          builder: (BuildContext context) {
+                                            return Container(
+                                              width: double.maxFinite,
+                                              height: double.maxFinite,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  fit: BoxFit.fitHeight,
+                                                  image: AssetImage('assets/images/portfolio/copal/$i'),
+                                                ),
+                                              ),
+                                            );
+                                          },
+                                        );
+                                      },
+                                    ).toList(),
+                                  ),
+                                  Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        IconButton(
+                                          onPressed: () => _carouselController.previousPage(),
+                                          icon: const SizedBox(
+                                            height: double.infinity,
+                                            width: 20,
+                                            child: Icon(Icons.navigate_before),
                                           ),
                                         ),
-                                      );
-                                    },
-                                  );
-                                }).toList(),
+                                        IconButton(
+                                            onPressed: () => _carouselController.nextPage(),
+                                            //icon: const Icon(Icons.navigate_next),
+                                            icon: const SizedBox(
+                                              height: double.infinity,
+                                              width: 20,
+                                              child: Icon(Icons.navigate_next),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                             actionsAlignment: MainAxisAlignment.spaceBetween,

@@ -15,7 +15,7 @@ https://itnext.io/an-easy-way-to-switch-between-dark-and-light-theme-in-flutter-
 https://betterprogramming.pub/how-to-create-a-dynamic-theme-in-flutter-using-provider-e6ad1f023899
  */
 
-//TODO popular localizations
+
 //TODO popular paginas de portifolio
 //
 
