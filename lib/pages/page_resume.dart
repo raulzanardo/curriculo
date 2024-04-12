@@ -9,6 +9,8 @@ import '../localization/localization_resume.i18n.dart';
 
 //https://www.coderzheaven.com/2019/04/26/tabbedappbar-in-flutter-android-and-ios/
 
+
+//TODO verificar animação na tela de prints : https://www.youtube.com/watch?v=WQC50wCrL2o
 class PageResume extends StatefulWidget {
   const PageResume({super.key});
 
@@ -32,6 +34,9 @@ class _PageResumeState extends State<PageResume> {
                 ///Foto e text (1 e 2)
                 //alignment: WrapAlignment.center,
                 children: [
+
+
+
                   Container(
                     alignment: Alignment.center,
                     width: (MediaQuery.of(context).size.width > 800) ? 200 : double.infinity,
