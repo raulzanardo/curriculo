@@ -7,7 +7,7 @@
 
 ## Resumo Profissional
 
-Desenvolvedor **Frontend e Mobile Sênior** com mais de 5 anos de experiência na criação de produtos digitais para web e mobile. Especialista em **Flutter** e **React**, com forte foco em **UX/UI, performance e qualidade de código**.
+Desenvolvedor **Frontend e Mobile** com mais de 5 anos de experiência na criação de produtos digitais para web e mobile. Especialista em **Flutter** e **React**, com forte foco em **UX/UI, performance e qualidade de código**.
 
 Atuação em produtos SaaS e aplicativos em produção, participando ativamente de decisões técnicas, arquitetura e evolução de produto. Possui background em **automação industrial e eletrônica**, trazendo visão sistêmica, confiabilidade e engenharia de alto nível para o desenvolvimento de software moderno.
 
