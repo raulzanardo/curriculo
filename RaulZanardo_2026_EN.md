@@ -1,7 +1,7 @@
 # Raul Zanardo
 
 **São Paulo, Brazil**  
-📧 raulzanardo@gmail.com  
+raulzanardo@gmail.com  
 
 ---
 
@@ -43,7 +43,7 @@ Working on the development of **24Pet Shelter**, a SaaS platform for managing an
 - Integration with **CI/CD pipelines on Microsoft Azure**
 - Active participation in code reviews and definition of frontend standards
 
-🔗 https://www.24pet.com/products/24petshelter
+https://www.24pet.com/products/24petshelter
 
 ---
 
@@ -60,7 +60,7 @@ Development of the **MyOrbit** application, focused on relationship management a
 - Application of **clean architecture** and design patterns for scalability
 - Strategic involvement in product evolution
 
-🔗 https://www.myorbit.chat
+https://www.myorbit.chat
 
 ---
 
@@ -77,7 +77,7 @@ Technical leadership in the development of mobile applications for industrial au
 - Integration between mobile software and automation hardware (IoT)
 - Close collaboration with engineering and automation teams
 
-🔗 https://apps.apple.com/br/app/copal/id1660752505
+https://apps.apple.com/br/app/copal/id1660752505
 
 ---
 
