@@ -7,9 +7,9 @@ raulzanardo@gmail.com
 
 ## Professional Summary
 
-**Frontend and Mobile Developer** with over 5 years of experience creating digital products for web and mobile. Specialist in **Flutter** and **React**, with strong focus on **UX/UI, performance, and code quality**.
+**Frontend, Mobile, and Backend Developer** with over 5 years of experience creating digital products for web and mobile. Specialist in **Flutter**, **React**, and **NestJS**, with strong focus on **UX/UI, performance, and code quality**.
 
-Working on SaaS products and production applications, actively participating in technical decisions, architecture, and product evolution. Background in **industrial automation and electronics**, bringing systemic vision, reliability, and high-level engineering to modern software development.
+Working on SaaS products and production applications, actively participating in technical decisions, architecture, and product evolution. Experience in **full-stack development**, from responsive interfaces to scalable REST APIs with **Node.js** and **NestJS**. Background in **industrial automation and electronics**, bringing systemic vision, reliability, and high-level engineering to modern software development.
 
 Experience in **AI-assisted development**, using tools such as **GitHub Copilot, Cursor, and Windsurf** to accelerate development and optimize productivity. Proficient in **prompt engineering** to maximize efficiency with AI agents in the development cycle.
 
@@ -18,9 +18,10 @@ Experience in **AI-assisted development**, using tools such as **GitHub Copilot,
 ## Key Competencies
 
 - Frontend and Mobile Development (Flutter, React)
+- Backend Development (Node.js, NestJS)
 - Product-oriented UX/UI and usability
 - Scalable application architecture
-- API and backend integration
+- REST API design and development
 - CI/CD and cloud deployment
 - AI-Assisted Development and Prompt Engineering
 - Collaboration with multidisciplinary teams
@@ -56,7 +57,9 @@ Development of the **MyOrbit** application, focused on relationship management a
 - Mobile development with **Flutter/Dart** for Android and iOS
 - Direct participation in product conception and technical decisions
 - Implementation of complex UX/UI flows in collaboration with design
-- Backend contribution, implementing APIs and business rules
+- **Backend development with NestJS/TypeScript**, creating scalable REST APIs
+- Design and implementation of database models and business logic
+- Authentication, authorization, and security best practices
 - Application of **clean architecture** and design patterns for scalability
 - Strategic involvement in product evolution
 
@@ -133,8 +136,8 @@ https://apps.apple.com/br/app/copal/id1660752505
 **Mobile:**  
 Flutter • Dart • Android • iOS • Provider
 
-**Web:**  
-React • TypeScript • JavaScript • HTML • CSS • Node.js
+**Web & Backend:**  
+React • TypeScript • JavaScript • HTML • CSS • Node.js • NestJS • REST APIs
 
 **Cloud & DevOps:**  
 Microsoft Azure • CI/CD • Git • GitHub • Docker

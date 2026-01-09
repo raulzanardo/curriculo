@@ -7,9 +7,9 @@ raulzanardo@gmail.com
 
 ## Resumo Profissional
 
-Desenvolvedor **Frontend e Mobile** com mais de 5 anos de experiência na criação de produtos digitais para web e mobile. Especialista em **Flutter** e **React**, com forte foco em **UX/UI, performance e qualidade de código**.
+Desenvolvedor **Frontend, Mobile e Backend** com mais de 5 anos de experiência na criação de produtos digitais para web e mobile. Especialista em **Flutter**, **React** e **NestJS**, com forte foco em **UX/UI, performance e qualidade de código**.
 
-Atuação em produtos SaaS e aplicativos em produção, participando ativamente de decisões técnicas, arquitetura e evolução de produto. Possui background em **automação industrial e eletrônica**, trazendo visão sistêmica, confiabilidade e engenharia de alto nível para o desenvolvimento de software moderno.
+Atuação em produtos SaaS e aplicativos em produção, participando ativamente de decisões técnicas, arquitetura e evolução de produto. Experiência em **desenvolvimento full-stack**, desde interfaces responsivas até APIs REST escaláveis com **Node.js** e **NestJS**. Possui background em **automação industrial e eletrônica**, trazendo visão sistêmica, confiabilidade e engenharia de alto nível para o desenvolvimento de software moderno.
 
 Experiência em **AI-assisted development**, utilizando ferramentas como **GitHub Copilot, Cursor e Windsurf** para acelerar desenvolvimento e otimizar produtividade. Proficiente em **prompt engineering** para maximizar eficiência com AI agents no ciclo de desenvolvimento.
 
@@ -18,9 +18,10 @@ Experiência em **AI-assisted development**, utilizando ferramentas como **GitHu
 ## Competências-Chave
 
 - Desenvolvimento Frontend e Mobile (Flutter, React)
+- Desenvolvimento Backend (Node.js, NestJS)
 - UX/UI orientado a produto e usabilidade
 - Arquitetura de aplicações escaláveis
-- Integração com APIs e backend
+- Design e desenvolvimento de APIs REST
 - CI/CD e deploy em cloud
 - AI-Assisted Development e Prompt Engineering
 - Colaboração com times multidisciplinares
@@ -56,7 +57,9 @@ Desenvolvimento do aplicativo **MyOrbit**, focado na gestão de relacionamentos 
 - Desenvolvimento mobile com **Flutter/Dart** para Android e iOS
 - Participação direta na concepção do produto e decisões técnicas
 - Implementação de fluxos complexos de UX/UI em colaboração com design
-- Contribuição no backend, implementando APIs e regras de negócio
+- **Desenvolvimento backend com NestJS/TypeScript**, criando APIs REST escaláveis
+- Design e implementação de modelos de banco de dados e lógica de negócio
+- Autenticação, autorização e boas práticas de segurança
 - Aplicação de **clean architecture** e design patterns para escalabilidade
 - Atuação estratégica na evolução do produto
 
@@ -133,8 +136,8 @@ https://apps.apple.com/br/app/copal/id1660752505
 **Mobile:**  
 Flutter • Dart • Android • iOS • Provider
 
-**Web:**  
-React • TypeScript • JavaScript • HTML • CSS • Node.js
+**Web & Backend:**  
+React • TypeScript • JavaScript • HTML • CSS • Node.js • NestJS • REST APIs
 
 **Cloud & DevOps:**  
 Microsoft Azure • CI/CD • Git • GitHub • Docker
