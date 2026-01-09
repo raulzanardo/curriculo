@@ -1,6 +1,12 @@
 #!/bin/bash
 
 # Convert markdown resumes to PDF with custom formatting
+#
+# Required packages:
+#   - pandoc: brew install pandoc
+#   - basictex (for xelatex): brew install --cask basictex
+#
+# After installing basictex, run: eval "$(/usr/libexec/path_helper)"
 
 echo "Converting resumes to PDF..."
 
