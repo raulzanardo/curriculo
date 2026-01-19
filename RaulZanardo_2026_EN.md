@@ -2,6 +2,7 @@
 
 **São Paulo, Brazil**  
 raulzanardo@gmail.com  
+[raulzanardo.github.io](https://raulzanardo.github.io/)
 
 ---
 
@@ -32,11 +33,13 @@ Experience in **AI-assisted development**, using tools such as **GitHub Copilot,
 ## Professional Experience
 
 ### Frontend Developer | **Petplace**
+
 **May 2024 – December 2025**
 
 Working on the development of **24Pet Shelter**, a SaaS platform for managing animal shelters and protection NGOs.
 
 **Key achievements:**
+
 - Frontend development and evolution using **React** and **TypeScript**
 - Implementation of accessible, responsive, and performant interfaces
 - Optimization of critical flows for non-technical users, improving system usability
@@ -49,11 +52,13 @@ https://www.24pet.com/products/24petshelter
 ---
 
 ### Flutter Developer | **MyOrbit**
+
 **May 2024 – December 2025**
 
 Development of the **MyOrbit** application, focused on relationship management and social circle organization with strong emphasis on privacy.
 
 **Key achievements:**
+
 - Mobile development with **Flutter/Dart** for Android and iOS
 - Direct participation in product conception and technical decisions
 - Implementation of complex UX/UI flows in collaboration with design
@@ -68,11 +73,13 @@ https://www.myorbit.chat
 ---
 
 ### Flutter Developer | **Pensenova**
+
 **October 2020 – May 2024**
 
 Technical leadership in the development of mobile applications for industrial automation.
 
 **Key achievements:**
+
 - Complete development of Flutter applications, from conception to publication
 - Creation of the **CoPal** application, used for parameterization and control of industrial robots
 - Design and implementation of UX/UI focused on industrial environments
@@ -85,6 +92,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Automation Developer | **Nova Tecnologia**
+
 **October 2014 – April 2018**
 
 - Development of industrial automation systems with SCADA
@@ -95,6 +103,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Electronics Technician | **Flex Automation**
+
 **May 2014 – September 2014**
 
 - Maintenance and assembly of electronic boards (SMD and PTH)
@@ -104,6 +113,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Automation Intern | **Nova Tecnologia**
+
 **November 2012 – October 2013**
 
 - Development of control systems for building automation
@@ -114,11 +124,13 @@ https://apps.apple.com/br/app/copal/id1660752505
 
 ## Education
 
-### Control and Automation Engineering  
+### Control and Automation Engineering
+
 **IFSP – Federal Institute of São Paulo**  
 2009 – 2019
 
-### Electronics Technician  
+### Electronics Technician
+
 **ETEC Professor Aprígio Gonzaga**  
 2007 – 2008
 
@@ -155,5 +167,5 @@ GitHub Copilot • Cursor • Windsurf • Prompt Engineering • AI-Assisted De
 
 ## Languages
 
-- Portuguese: Native  
+- Portuguese: Native
 - English: Advanced

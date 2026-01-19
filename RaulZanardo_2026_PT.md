@@ -2,6 +2,7 @@
 
 **São Paulo, Brasil**  
 raulzanardo@gmail.com  
+[raulzanardo.github.io](https://raulzanardo.github.io/)
 
 ---
 
@@ -32,11 +33,13 @@ Experiência em **AI-assisted development**, utilizando ferramentas como **GitHu
 ## Experiência Profissional
 
 ### Desenvolvedor Frontend | **Petplace**
+
 **maio de 2024 – dezembro de 2025**
 
 Atuação no desenvolvimento do **24Pet Shelter**, plataforma SaaS para gestão de abrigos e ONGs de proteção animal.
 
 **Principais realizações:**
+
 - Desenvolvimento e evolução do frontend utilizando **React** e **TypeScript**
 - Implementação de interfaces acessíveis, responsivas e performáticas
 - Otimização de fluxos críticos para usuários não técnicos, melhorando a usabilidade do sistema
@@ -49,11 +52,13 @@ https://www.24pet.com/products/24petshelter
 ---
 
 ### Desenvolvedor Flutter | **MyOrbit**
+
 **maio de 2024 – dezembro de 2025**
 
 Desenvolvimento do aplicativo **MyOrbit**, focado na gestão de relacionamentos e organização de círculos sociais com forte ênfase em privacidade.
 
 **Principais realizações:**
+
 - Desenvolvimento mobile com **Flutter/Dart** para Android e iOS
 - Participação direta na concepção do produto e decisões técnicas
 - Implementação de fluxos complexos de UX/UI em colaboração com design
@@ -68,11 +73,13 @@ https://www.myorbit.chat
 ---
 
 ### Desenvolvedor Flutter | **Pensenova**
+
 **outubro de 2020 – maio de 2024**
 
 Liderança técnica no desenvolvimento de aplicativos móveis voltados à automação industrial.
 
 **Principais realizações:**
+
 - Desenvolvimento completo de aplicações Flutter, da concepção à publicação
 - Criação do aplicativo **CoPal**, utilizado para parametrização e controle de robôs industriais
 - Design e implementação da UX/UI focada em ambientes industriais
@@ -85,6 +92,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Desenvolvedor de Automação | **Nova Tecnologia**
+
 **outubro de 2014 – abril de 2018**
 
 - Desenvolvimento de sistemas de automação industrial com SCADA
@@ -95,6 +103,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Técnico em Eletrônica | **Flex Automation**
+
 **maio de 2014 – setembro de 2014**
 
 - Manutenção e montagem de placas eletrônicas (SMD e PTH)
@@ -104,6 +113,7 @@ https://apps.apple.com/br/app/copal/id1660752505
 ---
 
 ### Estagiário de Automação | **Nova Tecnologia**
+
 **novembro de 2012 – outubro de 2013**
 
 - Desenvolvimento de sistemas de controle para automação predial
@@ -114,11 +124,13 @@ https://apps.apple.com/br/app/copal/id1660752505
 
 ## Formação Acadêmica
 
-### Engenharia de Controle e Automação  
+### Engenharia de Controle e Automação
+
 **IFSP – Instituto Federal de São Paulo**  
 2009 – 2019
 
-### Técnico em Eletrônica  
+### Técnico em Eletrônica
+
 **ETEC Professor Aprígio Gonzaga**  
 2007 – 2008
 
@@ -155,5 +167,5 @@ GitHub Copilot • Cursor • Windsurf • Prompt Engineering • AI-Assisted De
 
 ## Idiomas
 
-- Português: Nativo  
+- Português: Nativo
 - Inglês: Avançado
